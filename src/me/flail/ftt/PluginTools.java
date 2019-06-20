@@ -14,12 +14,14 @@ public class PluginTools {
 
 	public static void enablePlugin(Plugin plugin) {
 		try {
-			Plugin pl = Bukkit.getPluginManager().loadPlugin(new File(plugin.getName() + ".jar"));
+			plugin = Bukkit.getPluginManager().loadPlugin(new File(plugin.getName() + ".jar"));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 
-		Bukkit.getPluginManager().enablePlugin(plugin);
+		if (plugin != null) {
+			Bukkit.getPluginManager().enablePlugin(plugin);
+		}
 	}
 
 	public static void disablePlugin(Plugin plugin) {
