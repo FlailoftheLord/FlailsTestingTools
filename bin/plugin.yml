@@ -1,0 +1,40 @@
+name: FlailsTestingTools
+main: me.flail.ftt.FTT
+version: 1.0
+api-version: 1.14
+softdepend: 
+- MonsterApocalypse
+
+# Nasy stuff
+author: FlailoftheLord
+
+commands:
+  ftt:
+    description: main command
+    usage: /ftt help:gmc:gms:gma:gmsp:op:deop:fly <-player>
+    
+  gmc:
+    description: creative mode
+    usage: /gmc <-player>
+  gms: 
+    description: survival mode
+    usage: /gms <-player>
+  gma:
+    description: adventure mode
+    usage: /gma <-player>
+  gmsp: 
+    description: spectator mode
+    usage: /gmsp <-player>
+  fly:
+    description: fly mode
+    usage: /fly <-player>
+  op:
+    description: set op
+    usage: /op <-player>
+  deop:
+    description: unset op
+    usage: /deop <-player>
+  plugin:
+    description: manage a plugin
+    usage: /plugin <-name> reload:disable:enable
+  
