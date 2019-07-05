@@ -165,6 +165,12 @@ public class Commands {
 
 			target.sendMessage(FTT.chat("%prefix% &cYou've been De-Op'ed!"));
 			break;
+		case "heal":
+			target.setHealth(20);
+			target.setFoodLevel(24);
+
+			target.sendMessage(FTT.chat("%prefix% &6You've been healed!"));
+			break;
 		}
 	}
 

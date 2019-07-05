@@ -38,7 +38,7 @@ public class FTT extends JavaPlugin implements Listener {
 	public void onCmdProcess(PlayerCommandPreprocessEvent event) {
 		String message = event.getMessage();
 
-		String[] args = { "gmc", "gma", "gms", "gmsp", "fly", "op", "deop" };
+		String[] args = { "gmc", "gma", "gms", "gmsp", "fly", "op", "deop", "heal" };
 		for (String s : args) {
 			if (message.startsWith("/" + s)) {
 				message = message.replace("/", "/ftt ");

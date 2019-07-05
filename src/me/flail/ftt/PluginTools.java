@@ -14,7 +14,7 @@ public class PluginTools {
 
 	public static void enablePlugin(Plugin plugin) {
 		try {
-			plugin = Bukkit.getPluginManager().loadPlugin(new File(plugin.getName() + ".jar"));
+			plugin = Bukkit.getPluginManager().loadPlugin(new File("plugins/" + plugin.getName() + ".jar"));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

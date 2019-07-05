@@ -11,7 +11,7 @@ author: FlailoftheLord
 commands:
   ftt:
     description: main command
-    usage: /ftt help:gmc:gms:gma:gmsp:op:deop:fly <-player>
+    usage: /ftt help:gmc:gms:gma:gmsp:op:deop:heal:fly <-player>
     
   gmc:
     description: creative mode
@@ -34,6 +34,9 @@ commands:
   deop:
     description: unset op
     usage: /deop <-player>
+  heal:
+    description: heal me pls
+    usage: /heal
   plugin:
     description: manage a plugin
     usage: /plugin <-name> reload:disable:enable
