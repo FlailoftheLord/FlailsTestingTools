@@ -1,7 +1,7 @@
 name: FlailsTestingTools
 main: me.flail.ftt.FTT
 version: 1.0
-api-version: 1.14
+api-version: 1.13
 softdepend: 
 - MonsterApocalypse
 
@@ -40,4 +40,12 @@ commands:
   plugin:
     description: manage a plugin
     usage: /plugin <-name> reload:disable:enable
+  killitems:
+    description: kill all dropped items
+    usage: /killitems [radius]
+  killmobs:
+    description: kill nearby mobs
+    aliases: [butcher]
+    usage: /killmobs [radius]
+  
   

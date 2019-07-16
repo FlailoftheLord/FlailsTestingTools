@@ -90,6 +90,9 @@ public class Commands {
 					hMsg.add("  &8- &7/op <player>");
 					hMsg.add("  &8- &7/deop <player>");
 					hMsg.add("  &8- &7/plugin <name> <enable:disable:relaod>");
+					hMsg.add("  &8- &7/killmobs [radius]  &8(&7/butcher&8)");
+					hMsg.add("  &8- &7/killitems [radius]");
+					hMsg.add(" ");
 
 					for (String line : hMsg) {
 						operator.sendMessage(FTT.chat(line));
@@ -170,6 +173,21 @@ public class Commands {
 			target.setFoodLevel(24);
 
 			target.sendMessage(FTT.chat("%prefix% &6You've been healed!"));
+			break;
+		case "killmobs":
+			FTT.killEntities(target, -1, false);
+
+			target.sendMessage(FTT.chat("%prefix% &cButchered mobs in radius: -1"));
+			break;
+		case "butcher":
+			FTT.killEntities(target, -1, false);
+
+			target.sendMessage(FTT.chat("%prefix% &cButchered mobs in radius: -1"));
+			break;
+		case "killitems":
+			FTT.killEntities(target, -1, true);
+
+			target.sendMessage(FTT.chat("%prefix% &cButchered mobs in radius: -1"));
 			break;
 		}
 	}
