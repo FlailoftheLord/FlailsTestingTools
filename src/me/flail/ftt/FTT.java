@@ -66,6 +66,10 @@ public class FTT extends JavaPlugin implements Listener {
 		}
 
 		for (Entity e : entities) {
+			if (e.isInvulnerable()) {
+				continue;
+			}
+
 			if (e.isValid() && !(e instanceof Player)) {
 				if (killItems && (e instanceof Item)) {
 					e.remove();
